@@ -13,3 +13,4 @@ for n in range(1,len(input_table)+1):
 input_table["Stream Number"]=index
 input_table=input_table.set_index('Stream Number')
 input_table
+input_table=input_table.rename(columns={"Supply Temperture (°C)": "Ts", "Target Temperature (°C)": "Tt", "Heat Capacity Flowrate (kW/K)":"FCp"})
